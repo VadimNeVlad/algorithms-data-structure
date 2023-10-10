@@ -8,7 +8,7 @@ class Stack {
   }
 
   pop() {
-    if (!this.items.length) return "items are empty";
+    if (this.isEmpty()) return "Underflow";
     return this.items.pop();
   }
 
